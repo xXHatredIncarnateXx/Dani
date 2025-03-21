@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flores Amarillas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Tal vez no sean reales, pero no te quedas sin tus flores amarillas</h1>
+        <h1>Te extraño demasiado, no te haces la idea. Sé que no sientes lo mismo</h1>
+        <h1>Te amo <3</h1>
+        <div class="flower-container">
+            <!-- Las flores se agregarán aquí mediante JavaScript -->
+        </div>
+
+        <!-- Audio de fondo -->
+        <audio id="background-music" loop>
+            <source src="Kevin Kaarl - búscame otra vez.mp3" type="audio/mpeg">
+            Tu navegador no soporta el audio.
+        </audio>
+
+        <!-- Controles de música -->
+        <div class="audio-controls">
+            <p id="play-hint" class="play-hint">Reproduce la bolita amarilla, corazón 💛</p>
+            <button id="play-pause-btn" onclick="toggleMusic()">
+                <i class="fas fa-play"></i>
+            </button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value)">
+        </div>
+    </div>
+
+    <script src="jsonflower.js"></script>
+</body>
+</html>
